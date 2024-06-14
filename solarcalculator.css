@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS RESET BY MYE WEB */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  -webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+	line-height: 1;
+    background-color: #bfd6ed;
+}
+ol, ul {
+	list-style: none;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300; /* loaded 300 and 700*/
+    font-size: 18px; /* Changed font size to 18px */
+}
+header {
+	border-top: 40px solid #f06b32;
+	background-image: url(sun.png);
+	/*Sun from https://openclipart.org/detail/3367/decorative-sun*/
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+header h1 {
+	color: #e05b13;
+	font-size: 3rem;
+	padding: .5rem 0 .5rem 60px;
+}
+header, nav, main, footer {max-width: 960px; margin: 0 auto;}
+nav {background-color: #e5592f; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+nav li {
+	float: left;
+	width: 25%;
+}
+nav li a {
+	color: #161414;
+	display: block;
+	text-decoration: none;
+	padding: .5rem 0;
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid #000;
+	transition: background-color 0.3s ease;
+}
+nav li a:hover {background-color: #f5da51;}
+nav li.active a {background-color: #bd3232;}
+main {padding: .3rem 2%; display: block;}
+main h1 {
+	color: #e05b13;
+	font-size: 2rem;
+	padding-top: 1rem;
+}
+main h2 {
+	color: #e05b13;
+	font-size: 1.5rem;
+	padding-top: 1rem;
+}
+main p{
+	line-height: 1.5;
+	padding-bottom: .25rem;
+	color: #333;
+}
+main fieldset {
+	border: 1px solid #7a4f4f;
+	border-radius: 10px;
+	padding: 1rem 2%;
+	margin-top: 1rem;
+	background: #eee9e7;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main fieldset legend {color:#637e96; font-weight: 700;}
+
+main form label {
+	display: block;
+	padding: .4rem 0;
+	font-size: 14px;
+}
+main form span {
+	display: block;
+	font-size: 16px;
+    color: #466581e3; 
+}
+main form input {
+	width: 6rem;
+	font-size: .95rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+main form select {
+	width: 15rem;
+	font-size: .95rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+main button {
+	width: 240px;
+	border: none;
+	padding: .8rem;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	margin-top: 1rem;
+	background: #73cbf4;
+	background: linear-gradient(to bottom,  #e5322f 1%,#f69144e2 100%);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: background 0.3s ease, transform 0.3s ease;
+}
+main button:hover {
+	background: linear-gradient(to bottom, #d5dadfcb 1%, #90c3f1 100%);
+	transform: translateY(-2px);
+}
+
+footer {
+	text-align: center;
+	background: #eb4c08e3;
+	color: #fff;
+	font-size: .75rem;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	border-radius: 0 0 10px 10px;
+}
+
+.keepOpen {clear: both;}
+
+main fieldset#mpc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main fieldset#mpc .months-input {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main fieldset#mpc .months-input label,
+main fieldset#mpc .months-input input {
+    flex: 1 1 45%;
+    margin: 0.5rem;
+}
+
+main fieldset#mpc figure {
+    order: 2;
+    width: 35%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main figure img {
+    width: 100%;
+    border: 2px solid rgba(240, 187, 26, 0.466); 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main figure img:hover {
+    transform: scale(1.05);
+}
+
+main p, main h1, main h2, main label, main legend, main span, main input, main select {
+    color: #b52222e3;
+}
